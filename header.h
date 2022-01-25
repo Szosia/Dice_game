@@ -26,9 +26,9 @@ void wpiszPunktyDoTabeli(char);
 
 void rzutPierwszy();
 
-void rzutDrugi(char tab[]);
+void rzutDrugi(char tab[20]);
 
-void rzutTrzeci(char tab[]);
+void rzutTrzeci(char tab[20]);
 
 void poRzucie();
 
