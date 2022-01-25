@@ -13,8 +13,8 @@ int wyniki[5]{};
 
 int main()
 {
-	srand(time(NULL));
-	//Ustawiam polskie znaki
+	grafika();
+	// Ustawiam polskie znaki
 	setlocale(LC_CTYPE, "Polish");
 	wypiszMenu();
 	system("pause");

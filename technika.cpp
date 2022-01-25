@@ -17,7 +17,7 @@ struct najwyzszyWynik
 
 void grafika()
 {
-	// Wyœwietlam grafikê przedstawiaj¹c¹ szeœciany i wypisujê menu gry
+	// Wyœwietlam grafikê przedstawiaj¹c¹ szeœciany
 	string linia = "";
 	ifstream pliczek;
 	pliczek.open("kostki.txt");
@@ -42,7 +42,7 @@ void wypiszMenu()
 	// Wyœwietlam grafikê przedstawiaj¹c¹ szeœciany i wypisujê menu gry
 	grafika();
 	cout.width(40);
-	cout << "1. Graj" << endl;
+	cout << "1. Nowa gra" << endl;
 	cout.width(38);
 	cout << "2. Zasady" << endl;
 	cout.width(47);
@@ -241,6 +241,61 @@ void wypiszTabele()
 	i++;
 }
 
+void rysujKosc(int wyniki[5])
+{
+	string kosci[6][4]
+	{
+		{ // jeden
+			" ______ ",
+			"|      |",
+			"|  ()  |",
+			"|______|" 
+		},
+		{ // dwa
+			" ______ ",
+			"|    ()|",
+			"|      |",
+			"|()____|"
+		},
+		{ // trzy
+			" ______ ",
+			"|    ()|",
+			"|  ()  |",
+			"|()____|"
+		},
+		{ // cztery
+			" ______ ",
+			"|()  ()|",
+			"|      |",
+			"|()__()|"
+		},
+		{ // piêæ
+			" ______ ",
+			"|()  ()|",
+			"|  ()  |",
+			"|()__()|"
+		},
+		{ // szeœæ
+			" ______ ",
+			"|()  ()|",
+			"|()  ()|",
+			"|()__()|"
+		}
+
+	};
+
+	// Ta pêtla okreœla numer wiersza
+	for (int i = 0; i < 4; i++)
+	{
+		// Ta pêtla zmienia numer koœci
+		for (int k = 0; k < 5; k++)
+		{
+		cout << kosci[wyniki[k]-1][i] << " ";
+		}
+		cout << endl;
+	}
+}
+
 void wyswietlRzut()
 {
 	switch (runda)
@@ -249,22 +304,16 @@ void wyswietlRzut()
 		for (int i = 0; i < 5; i++)
 		{
 			wyniki[i] = (rand() % 6) + 1;
-			cout << wyniki[i] << "  ";
 		}
+		rysujKosc(wyniki);
 		cout << endl;
 		break;
 	case 2:
-		for (int i = 0; i < 5; i++)
-		{
-			cout << wyniki[i] << "  ";
-		}
+		rysujKosc(wyniki);
 		cout << endl;
 		break;
 	case 3:
-		for (int i = 0; i < 5; i++)
-		{
-			cout << wyniki[i] << "  ";
-		}
+		rysujKosc(wyniki);
 		cout << endl;
 		break;
 	}
