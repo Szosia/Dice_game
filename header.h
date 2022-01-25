@@ -20,6 +20,8 @@ void ranking();
 
 void zamknijGre();
 
+void zerujTablice();
+
 void wypiszTabele();
 
 void rysujKosc(int tab[5]);

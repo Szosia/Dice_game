@@ -39,6 +39,8 @@ void grafika()
 void wypiszMenu()
 {
 	system("cls");
+	// Zerujê wartoœci tablicy
+	zerujTablice();
 	// Wyœwietlam grafikê przedstawiaj¹c¹ szeœciany i wypisujê menu gry
 	grafika();
 	cout.width(40);
@@ -51,7 +53,7 @@ void wypiszMenu()
 	cout << "4. Zamknij grê" << endl;
 	//U¿ytkownik dokonuje wyboru
 	int wybor{};
-	cout << "Co chcesz zrobiæ (1/2/3/4)?  ";
+	cout << "Wybierz opcjê z menu (1/2/3/4):  ";
 	cin >> wybor;
 	switch (wybor)
 	{

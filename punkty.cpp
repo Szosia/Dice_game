@@ -22,6 +22,14 @@ bool K{};
 bool L{};
 bool M{};
 
+void zerujTablice()
+{
+	for (int i = 0; i < 14; i++)
+	{
+		tabela[i] = 0;
+	}
+}
+
 void wpiszPunktyDoTabeli(char litera)
 {
 	int suma = 0;
