@@ -8,6 +8,8 @@ extern int runda;
 
 //DEKLARACJE FUNKCJI
 
+void grafika();
+
 void wypiszMenu();
 
 void gra();
@@ -20,15 +22,17 @@ void zamknijGre();
 
 void wypiszTabele();
 
+void rysujKosc(int tab[5]);
+
 void wyswietlRzut();
 
 void wpiszPunktyDoTabeli(char);
 
 void rzutPierwszy();
 
-void rzutDrugi(char tab[]);
+void rzutDrugi(char tab[20]);
 
-void rzutTrzeci(char tab[]);
+void rzutTrzeci(char tab[20]);
 
 void poRzucie();
 

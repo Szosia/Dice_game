@@ -1,1 +1,2 @@
-Ranking jest pusty
+Najwy¿szy wynik: 80
+Mistrzem gry jest Zosia

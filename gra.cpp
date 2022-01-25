@@ -52,8 +52,8 @@ void gra()
 void rzutPierwszy()
 {
 	runda = 1;
-	cout << "Pierwszy rzut" << endl;
-	cout << "a  b  c  d  e" << endl;
+	cout << endl;
+	cout << "    a        b        c        d        e" << endl;
 }
 
 void poRzucie()
@@ -171,8 +171,7 @@ void rzutDrugi(char tekst[20])
 		}
 		if (tekst[i] == '/0') break;
 	}
-	cout << "Drugi rzut" << endl;
-	cout << "a  b  c  d  e" << endl;
+	cout << "    a        b        c        d        e" << endl;
 	wyswietlRzut();
 	poRzucie();
 }
@@ -202,8 +201,7 @@ void rzutTrzeci(char tekst[20])
 		}
 		if (tekst[i] == '/0') break;
 	}
-	cout << "Trzeci rzut" << endl;
-	cout << "a  b  c  d  e" << endl;
+	cout << "    a        b        c        d        e" << endl;
 	wyswietlRzut();
 	poRzucie();
 }
