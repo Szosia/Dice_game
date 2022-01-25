@@ -42,7 +42,7 @@ void wypiszMenu()
 	// Wyœwietlam grafikê przedstawiaj¹c¹ szeœciany i wypisujê menu gry
 	grafika();
 	cout.width(40);
-	cout << "1. Nowa gra" << endl;
+	cout << "1. Graj" << endl;
 	cout.width(38);
 	cout << "2. Zasady" << endl;
 	cout.width(47);
