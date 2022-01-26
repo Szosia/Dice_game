@@ -108,6 +108,7 @@ void poRzucie()
 				cout << "Podaj ma³e litery odpowiadaj¹ce koœciom!" << endl;
 			}
 			else break;
+			cin.ignore();
 		} while (czyMaleLitery == 0);
 
 

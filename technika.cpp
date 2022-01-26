@@ -50,6 +50,7 @@ void wypiszMenu()
 	cout << "3. Najwy¿szy wynik" << endl;
 	cout.width(43);
 	cout << "4. Zamknij grê" << endl;
+	cout << endl;
 	//U¿ytkownik dokonuje wyboru
 	int wybor{};
 	cout << "Wybierz opcjê z menu (1/2/3/4):  ";
