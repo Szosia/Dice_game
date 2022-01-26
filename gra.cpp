@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include <locale.h>
 #include <fstream>
 #include <string>
 #include "header.h"

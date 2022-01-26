@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include <locale.h>
+#include <clocale>
 #include <fstream>
 #include <string>
 #include "header.h"
